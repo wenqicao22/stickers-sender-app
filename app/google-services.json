@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "862707177371",
+    "project_id": "stick-it-to-em-c505b",
+    "storage_bucket": "stick-it-to-em-c505b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862707177371:android:1556719ff1191f5592333e",
+        "android_client_info": {
+          "package_name": "edu.neu.cs5520.sticker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862707177371-ged6jhss52lvgq05megvjq25f9c3561a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzi6zjMYs2DFgxOfzNFkpqqMcXIf2JW5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862707177371-ged6jhss52lvgq05megvjq25f9c3561a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

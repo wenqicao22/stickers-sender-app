@@ -1,0 +1,15 @@
+<resources>
+  <string name="app_name">stick-it-to-em</string>
+  <string name="preference_file_key">local_file_storage</string>
+  <string name="saved_username">SAVED_USERNAME</string>
+  <string name="enter_username">Please Enter your username:</string>
+  <string name="loading">Loading…</string>
+  <string name="welcome_fmt">Welcome, %s! You have sent %d messages(s) and received %d messages(s). Click buttons below to check the details.</string>
+  <string name="sent_stickers">Sent Stickers History</string>
+  <string name="received_stickers">Received Stickers History</string>
+  <string name="new_message">Send a new message</string>
+  <string name="sign_in">Sign In</string>
+  <string name="sign_out">Sign Out</string>
+  <string name="hint_username">Username</string>
+
+</resources>

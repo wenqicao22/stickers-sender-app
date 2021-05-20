@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:autofillHints="@string/hint_username"
+  tools:context=".activity.MainActivity">
+  <Button
+    android:id="@+id/button_sent_history"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:text="@string/sent_stickers"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.6" />
+  <Button
+    android:id="@+id/button_received_history"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:text="@string/received_stickers"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button_sent_history"
+    app:layout_constraintVertical_bias="0.0" />
+  <Button
+    android:id="@+id/button_sign_in"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="16dp"
+    android:text="@string/sign_in"
+    app:layout_constraintBottom_toBottomOf="@+id/field_username"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/field_username"
+    app:layout_constraintTop_toTopOf="@+id/field_username" />
+
+  <Button
+    android:id="@+id/button_sign_out"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:text="@string/sign_out"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="@+id/field_username"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/field_username" />
+
+  <EditText
+    android:id="@+id/field_username"
+    android:layout_width="0dp"
+    android:layout_height="39dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="16dp"
+    android:autofillHints="@string/hint_username"
+    android:ems="10"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/info_textview"
+    app:layout_constraintWidth_default="percent"
+    app:layout_constraintWidth_percent=".4" />
+  <TextView
+    android:id="@+id/info_textview"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:labelFor="@id/field_username"
+    android:text="@string/welcome_fmt"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toTopOf="@+id/button_sent_history"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.3" />
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab_new_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="32dp"
+    android:layout_marginEnd="32dp"
+    android:clickable="true"
+    android:contentDescription="@string/new_message"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:srcCompat="@drawable/ic_baseline_send_24" />
+  <ProgressBar
+    android:id="@+id/progressbar_message"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
